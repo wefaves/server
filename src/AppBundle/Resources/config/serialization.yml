@@ -1,0 +1,48 @@
+AppBundle\Entity\User:
+    attributes:
+        id:
+            groups: ['user', 'history', 'favorite']
+        username:
+            groups: ['user', 'history', 'favorite']
+        usernameCanonical:
+            groups: ['user', 'history', 'favorite']
+        email:
+            groups: ['user', 'history', 'favorite']
+        emailCanonical:
+            groups: ['user', 'history', 'favorite']
+        lastLogin:
+            groups: ['user', 'history', 'favorite']
+        roles:
+            groups: ['user', 'history', 'favorite']
+        histories:
+            groups: ['user']
+
+AppBundle\Entity\History:
+    attributes:
+        id:
+            groups: ['user', 'history']
+        title:
+            groups: ['user', 'history']
+        lastVisit:
+            groups: ['user', 'history']
+        typedCount:
+            groups: ['user', 'history']
+        url:
+            groups: ['user', 'history']
+        visitCount:
+            groups: ['user', 'history']
+        user:
+            groups: ['history']
+
+AppBundle\Entity\Favorite:
+    attributes:
+        id:
+            groups: ['user', 'favorite']
+        indexId:
+            groups: ['user', 'favorite']
+        title:
+            groups: ['user', 'favorite']
+        url:
+            groups: ['user', 'favorite']
+        user:
+            groups: ['favorite']

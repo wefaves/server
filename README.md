@@ -1,1 +1,1 @@
-wfserver
+manais-server

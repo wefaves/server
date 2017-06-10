@@ -1,0 +1,11 @@
+users:
+    type: rest
+    resource: AppBundle\Controller\UserController
+
+history:
+    type: rest
+    resource: AppBundle\Controller\HistoryController
+
+favorite:
+    type: rest
+    resource: AppBundle\Controller\FavoriteController
